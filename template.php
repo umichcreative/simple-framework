@@ -65,6 +65,15 @@ class Template
         }
     }
 
+    static public function render( $tpl )
+    {
+        foreach( self::$_wrappers as $wrapper ) {
+            if( is_file( SFW_ROOT . $wrapper . DIRECTORY_SEPARATOR . $tpl ) ) {
+                include SFW_ROOT . $wrapper . DIRECTORY_SEPARATOR . $tpl;
+            }
+        }
+    }
+
     static public function execute()
     {
         include SFW_ROOT . Uri::$file;

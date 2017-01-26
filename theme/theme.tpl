@@ -19,6 +19,8 @@
         <link rel="stylesheet" href="<?=SFW_BASE;?>framework/theme/vendor/foundation-ie8/<?=self::var( 'siteGrid' ) ?: 12;?>col.css" />
         <link rel="stylesheet" href="<?=SFW_BASE;?>framework/theme/vendor/styles/ie8/base.css" />
     <![endif]-->
+
+    <? self::render( 'head.tpl' ); ?> 
 </head>
 <body class="sfwGrid-<?=self::var( 'siteGrid' ) ?: 12;?><?=(self::var( 'siteBodyClass' ) ?: null);?>">
 <!--{CONTENTS}-->
