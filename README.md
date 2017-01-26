@@ -32,10 +32,12 @@ Below the usage of `{SLUG}` will be the name of the controller file without the 
 
 The controller file is determined based on the url requested and the search order for it is as follows:
 URL: /foo/bar/
+
 1. /foo/bar.php
 2. /foo/bar/index.php
 
-A Page consists of 2 files
+A Page consists of 2 files:
+
 1. **Controller:** {SLUG}.php
 2. **Template:** presentation/{SLUG}.tpl
 
