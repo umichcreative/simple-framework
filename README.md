@@ -2,8 +2,8 @@ Michigan Simple Framework
 =========================
 
 ## Installation
-1) Download files and place in your project root web directory within a folder named "framework".
-2) copy or add the contents of the file "framework/htaccess" to your project root web directory and rename as ".htaccess"
+1. Download files and place in your project root web directory within a folder named "framework".
+2. copy or add the contents of the file "framework/htaccess" to your project root web directory and rename as ".htaccess"
 
 ## Create Theme
 In your project web directory create a folder named "theme" in there you can have any one of the following files.
@@ -32,12 +32,12 @@ Below the usage of `{SLUG}` will be the name of the controller file without the 
 
 The controller file is determined based on the url requested and the search order for it is as follows:
 URL: /foo/bar/
-1) /foo/bar.php
-2) /foo/bar/index.php
+1. /foo/bar.php
+2. /foo/bar/index.php
 
 A Page consists of 2 files
-1) **Controller:** {SLUG}.php
-2) **Template:** presentation/{SLUG}.tpl
+1. **Controller:** {SLUG}.php
+2. **Template:** presentation/{SLUG}.tpl
 
 You can optionally add css and js files using the following paths relative the page controllres directory:
 styles/{SLUG}.css
