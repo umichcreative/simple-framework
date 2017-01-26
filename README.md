@@ -2,22 +2,22 @@ Michigan Simple Framework
 =========================
 
 ## Installation
-1. Download files and place in your project root web directory within a folder named "framework".
-2. copy or add the contents of the file "framework/htaccess" to your project root web directory and rename as ".htaccess"
+1. Download files and place in your project root web directory within a folder named `framework`.
+2. copy or add the contents of the file `framework/htaccess` to your project root web directory and rename as `.htaccess`
 
 ## Create Theme
-In your project web directory create a folder named "theme" in there you can have any one of the following files.
+In your project web directory create a folder named `theme` in there you can have any one of the following files.
 
 **config.php**
-Here you can add any global php code.  This can be enabling database support (see framework/bootstrap.php) or disabling the global framework/theme and all of its assets from being loaded (if you do this styles and scripts will not be added into the page unless you replicate that code form the framework/theme/theme.tpl file).
+Here you can add any global php code.  This can be enabling database support (see `framework/bootstrap.php`) or disabling the global `framework/theme` and all of its assets from being loaded (if you do this styles and scripts will not be added into the page unless you replicate that code form the `framework/theme/theme.tpl` file).
 
 **theme.tpl**
-Here you can create your own theme wrapper (do not duplicate the html in framework/theme/theme.tpl).  This is where you can place your own global header/footer/navigation for your site.  Place the tag `<!--{CONTENTS}-->` where you want the page contents to be placed.
+Here you can create your own theme wrapper (do not duplicate the html in `framework/theme/theme.tpl`).  This is where you can place your own global header/footer/navigation for your site.  Place the tag `<!--{CONTENTS}-->` where you want the page contents to be placed.
 
-**scripts/*.js**
+**scripts/\*.js**
 All files in this directory will automatically be included into the html.
 
-**styles/*.css**
+**styles/\*.css**
 All files in this directory will automatically be included into the html. 
 *If the filename ends with `_print.css` it will have the `media="print"` attribute added to the link element.*
 
