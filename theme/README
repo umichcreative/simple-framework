@@ -1,0 +1,26 @@
+SKIP LINKS
+=================================
+Needs to be added as direct child of the #wrapper element,  Need to update href to div id of main content element
+
+HTML
+----
+<a class="skip-link hidden" href="#section-content">Skip to content</a>
+
+
+
+BUILT IN ACCORDION HTML STRUCTURE
+=================================
+
+REPLACEMENTS
+------------
+{#}      : unique number/identifier for each accordion on page
+{TITLE}  : title of the accordion
+{CONTENT}: content of the accordion
+
+HTML
+----
+<div id="sfw-accordion-{#}" class="sfw-accordion">
+    <input id="sfw-accordion-action-{#}" type="checkbox" />
+    <label for="sfw-accordion-action-{#}" role="tab">{TITLE}</label>
+    <div class="sfw-accordion-content-wrap" role="tabpanel"><div class="sfw-accordion-content">{CONTENT}</div></div>
+</div>

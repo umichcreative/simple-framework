@@ -1,0 +1,123 @@
+/* SKIP CONTENT */
+#wrapper > .skip-link:focus {
+    clip: inherit;
+    outline: none;
+    left: 6px;
+    top: 7px;
+    height: auto;
+    width: auto;
+    display: block;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 15px 23px 14px;
+    background: #f1f1f1;
+    color: #0073aa;
+    z-index: 100000;
+    line-height: normal;
+    text-decoration: none;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+}
+
+/* HEADER MENU
+================================================== */
+.sfwMenu .hamburger-header {
+    display: none;
+}
+
+.sfwMenu.responsive .hamburger-header {
+    display: block;
+}
+.sfwMenu .hamburger-header .fa {
+    padding-right: 0.9375rem;
+}
+
+.sfwMenu ul {
+    margin: 0 -5px;
+    padding: 0;
+}
+
+.sfwMenu ul li {
+    display: inline;
+    float: left;
+    white-space: nowrap;
+    line-height: 1em;
+    padding: 0 5px;
+}
+
+.sfwMenu.responsive ul li {
+    display: block;
+    float: none;
+}
+
+
+/* MFW Accordion Shortcode
+================================================== */
+.sfw-accordion + .sfw-accordion {
+    margin-top: 1rem;
+}
+
+.sfw-accordion > input[type="checkbox"] {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.sfw-accordion > label {
+    position: relative;
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    line-height: 1;
+    border: 1px solid #efefef;
+    z-index: 11;
+    background-color: #efefef;
+}
+.sfw-accordion > input[type="checkbox"]:focus ~ label {
+    border-color: #999;
+}
+
+.sfw-accordion > label:hover {
+    background: #999;
+    color: #fff;
+}
+
+.sfw-accordion > .sfw-accordion-content-wrap {
+    position: relative;
+    max-height: 0;
+    overflow: hidden;
+    z-index: 10;
+}
+.sfw-accordion > .sfw-accordion-content-wrap.transition {
+    transition: max-height 0.3s ease-in-out;
+}
+.sfw-accordion > .sfw-accordion-content-wrap > .sfw-accordion-content {
+    padding: 1em;
+}
+
+.sfw-accordion > input[type="checkbox"]:checked ~ .sfw-accordion-content-wrap {
+    max-height: 999999px;
+    transition: max-height 0.5s ease-in-out;
+}
+
+@media print {
+    .sfw-accordion .sfw-accordion-content-wrap {
+        max-height: inherit;
+    }
+}
+
+
+/* MISC
+================================================== */
+/* ACCESSIBLE HIDE CLASS */
+.hidden {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+}
