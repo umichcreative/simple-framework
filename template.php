@@ -28,7 +28,7 @@ class Template
         }
     }
 
-    static public function var( $name, $value = null )
+    static public function setVar( $name, $value = null )
     {
         if( !is_null( $value ) ) {
             self::$_vars[ $name ] = $value;
