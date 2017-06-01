@@ -1,3 +1,3 @@
 <?php
 
-Template::var( 'foo', 'bar' );
+Template::setVar( 'foo', 'bar' );
