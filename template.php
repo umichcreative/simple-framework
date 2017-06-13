@@ -125,7 +125,7 @@ class Template
             array_shift( $tmp );
             $script = implode( DIRECTORY_SEPARATOR, $tmp );
             $script = str_replace( DIRECTORY_SEPARATOR, '/', str_replace( SFW_ROOT, '', $script ) );
-            self::$_script[] = SFW_BASE . $script;
+            self::$_scripts[] = SFW_BASE . $script;
         }
 
 
