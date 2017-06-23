@@ -111,7 +111,12 @@ class Template
         }
 
         // FIND PAGE AUTOLOAD STYLESHEET
-        $tmp = array( SFW_ROOT . dirname( Uri::$file ), 'styles', str_replace( '.php', '.css', basename( Uri::$file ) ) );
+        $tmp = array_filter( array(
+            rtrim( SFW_ROOT, '/' ),
+            trim( dirname( Uri::$file ), '/' ),
+            'styles',
+            str_replace( '.php', '.css', basename( Uri::$file ) )
+        ) );
         if( is_file( implode( DIRECTORY_SEPARATOR, $tmp ) ) ) {
             array_shift( $tmp );
             $style = implode( DIRECTORY_SEPARATOR, $tmp );
@@ -120,7 +125,12 @@ class Template
         }
 
         // FIND PAGE AUTOLOAD SCRIPT
-        $tmp = array( SFW_ROOT . dirname( Uri::$file ), 'scripts', str_replace( '.php', '.js', basename( Uri::$file ) ) );
+        $tmp = array_filter( array(
+            rtrim( SFW_ROOT, '/' ),
+            trim( dirname( Uri::$file ), '/' ),
+            'scripts',
+            str_replace( '.php', '.js', basename( Uri::$file ) )
+        ) );
         if( is_file( implode( DIRECTORY_SEPARATOR, $tmp ) ) ) {
             array_shift( $tmp );
             $script = implode( DIRECTORY_SEPARATOR, $tmp );
